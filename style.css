@@ -1,22 +1,103 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@100..900&display=swap");
 /* shared styles */
 
-.font-inter{
-    font-family: "Inter", sans-serif;
+.font-inter {
+  font-family: "Inter", sans-serif;
 }
-.font-allura{
-    font-family: "Allura", cursive;
+.font-allura {
+  font-family: "Allura", cursive;
 }
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: black; */
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
 /* shared styles ends here*/
 
-/* nav styles starts here */
 
+header {
+  background: rgb(0, 0, 0);
+}
+/* nav styles starts here */
+nav {
+  max-width: 1044px;
+  display: flex;
+  margin: 50px auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.brand {
+  color: rgb(230, 83, 60);
+  font-size: 36px;
+  font-weight: 800;
+  font-style: italic;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 39px;
+  padding: 4px;
+}
+.active {
+  border-radius: 46px;
+  background: rgb(230, 83, 60);
+  padding: 8px 20px;
+}
+.nav-link {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 10px;
+}
 /* nav styles ends here */
 
 /* banner styles starts here */
+.banner{
+    max-width: 1044px;
+  display: flex;
+  margin: 50px auto;
+  gap: 50px;
+  justify-content: space-between;
+}
+.banner-info{
+    flex: 1;
+    color: beige;
+}
+.banner-title{
+    color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 78px;
+font-weight: 900;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+}
+.banner-img{
+    flex:1;
+}
 /* banner styles ends here */
+
+/* responsive style*/
+@media screen and (max-width: 576px) {
+    /* nav {
+       flex-direction: column;
+      } */
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    
+}
