@@ -8,16 +8,16 @@
   font-family: "Allura", cursive;
   font-size: 98px;
   font-style: italic;
-  
 }
 * {
   margin: 0;
   padding: 0;
-  background-color: black;
+  /* background-color: black; */
 }
 body {
   max-width: 1440px;
   margin: 0 auto;
+  background-color: black;
 }
 li {
   list-style: none;
@@ -25,24 +25,14 @@ li {
 a {
   text-decoration: none;
 }
-.section-title{
-
+.section-title {
 }
-.section-subtitle{
-    color: rgba(255, 255, 255, 0.5);
-font-family: Inter;
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.3px;
-text-align: left;
+.section-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
 }
 /* shared styles ends here*/
-
-
-header {
-  background: rgb(0, 0, 0);
-}
 /* nav styles starts here */
 nav {
   max-width: 1044px;
@@ -50,6 +40,7 @@ nav {
   margin: 50px auto;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
 }
 .brand {
   color: rgb(230, 83, 60);
@@ -78,140 +69,227 @@ nav {
   font-weight: 400;
   margin-right: 10px;
   background-color: transparent;
-
 }
-.nav-hamburger{
-    color: rgb(255, 255, 255);
-    display: none;
+.nav-hamburger {
+  color: rgb(255, 255, 255);
+  display: none;
 }
 /* nav styles ends here */
 
 /* banner styles starts here */
-.banner{
-    max-width: 1044px;
+.banner {
+  max-width: 1044px;
   display: flex;
-  margin: 50px auto;
-  gap: 50px;
+  margin: 0px auto;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  background-color: black;
 }
-.banner-info{
-    color: beige;
+.banner-content {
+  width: 50%;
 }
-.banner-title{
-    color: rgb(255, 255, 255);
-font-size: 78px;
-font-weight: 900;
-margin-bottom: 28px;
+.banner-title {
+  color: rgb(255, 255, 255);
+  font-size: 78px;
+  font-weight: 900;
+  margin-bottom: 28px;
 }
-.banner-subtitle{
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    
-margin-bottom: 28px;
+.banner-subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 28px;
 }
-.banner-img{
-
+.banner-img {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: right;
 }
-.btn-primary{
-    border-radius: 42px;
-    background: rgb(230, 83, 60);
-    padding: 16px 40px 16px 40px;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 600;
+.banner-img img {
+  max-width: 80%;
 }
-.btn-download{
-    background: transparent;
-    box-sizing: border-box;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 42px;
-    color: rgb(255, 255, 255);
-    padding: 16px 40px 16px 40px;
-    font-size: 18px;
-    font-weight: 600;
+.workout-content {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  position: absolute;
+  top: 20%;
+  bottom: 62%;
+  left: 70%;
+}
+.workout-title {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 900;
+}
+.workout-subtitle {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.video-content {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 40px 10px;
+  width: max-content;
+  position: absolute;
+  top: 80%;
+  right: 90%;
+  bottom: 5%;
+  left: 10%;
+}
+.video-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  background: rgb(230, 83, 60);
+  color: rgb(250, 250, 249);
+}
+.video-title {
+  color: rgb(250, 250, 249);
+  font-size: 24px;
+  font-weight: 900;
+}
+.video-subtitle {
+  color: rgba(239, 237, 232, 0.65);
+  font-size: 16px;
+  font-weight: 400;
+}
+.btn-primary {
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  padding: 16px 30px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
+}
+.btn-download {
+  background: transparent;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 42px;
+  color: rgb(255, 255, 255);
+  padding: 16px 30px;
+  font-size: 18px;
+  font-weight: 600;
 }
 /* banner styles ends here */
 
-
-
-
-
-
 /* responsive style*/
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-  
-    /* CSS */
-    
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  body {
+    padding: 0px 30px;
   }
-  
-  /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    
-    /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
-    body{
-        padding: 0px 30px;
-    }
-    
-  }
-
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    body{
-        padding:0px 30px;
-    }
-    /* nav{
-        padding: 20px;
-    } */
-    .banner {
-        /* padding: 20px; */
-       flex-direction: column;
-      }
 }
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    /* nav{
-        padding: 20px;
-    } */
-    body{
-        padding: 0px 20px;
-    }
-    .banner {
-        /* padding: 20px; */
-       flex-direction: column;
-      }
-    .nav-hamburger{
-        color: rgb(255, 255, 255);
-        display: block;
-    }
-    .nav-items{
-        display: none;
-    }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    padding: 0px 30px;
   }
+  .banner-img {
+    justify-content: center;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner-content {
+    width: 100%;
+    margin-bottom: 52px;
+  }
+  .banner-img {
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  body {
+    padding: 0px 40px;
+  }
+  .banner {
+    flex-direction: column;
+    padding: 70px;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .banner-img {
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  body {
+    padding: 0px 20px;
+  }
+  .nav-hamburger {
+    display: block;
+  }
+  .nav-items {
+    display: none;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .banner-title {
+    font-size: 36px;
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .banner-img {
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .banner-img img {
+    max-width: 100%;
+  }
+  .font-allura {
+    font-size: 36px;
+  }
+  .workout-title {
+    font-size: 30px;
+  }
+  .workout-subtitle {
+    font-size: 9px;
+  }
+  .workout-content {
+    left: 52%;
+    top: 10%;
+    bottom: 73%;
+    right: 2%;
+  }
+  .video-content {
+    top: 70%;
+    right: 90%;
+    bottom: 50%;
+    left: 4%;
+  }
+  .video-title {
+    font-size: 18.14px;
+  }
+  .video-subtitle {
+    font-size: 12px;
+  }
+}
