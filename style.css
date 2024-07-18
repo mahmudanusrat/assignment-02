@@ -30,14 +30,26 @@ a {
   font-size: 48px;
   font-weight: 900;
   line-height: 120%;
+  margin-bottom: 14px;
 }
 .section-subtitle {
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  margin-bottom: 20px;
 }
+.btn-primary {
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 16px 40px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+  }
 /* shared styles ends here*/
+
 /* nav styles starts here */
 nav {
   max-width: 1044px;
@@ -177,14 +189,6 @@ nav {
   font-size: 16px;
   font-weight: 400;
 }
-.btn-primary {
-  border-radius: 42px;
-  background: rgb(230, 83, 60);
-  padding: 16px 30px;
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  font-weight: 600;
-}
 .btn-download {
   background: transparent;
   box-sizing: border-box;
@@ -207,23 +211,64 @@ nav {
   max-width: 671px;
   margin: 0 auto;
 }
-.habit-cards-container{
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+.habit-cards-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
-.habit-card{
+.card-img {
+  border-radius: 100px;
+  border: 4px solid #ffffff1a;
+  margin-bottom: 20px;
 }
-.card-img{
-    border-radius: 100px;
-    border: 4px solid #FFFFFF1A;
-    margin-bottom: 20px;
+.card-title {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 600;
 }
-.card-title{
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 600;
+/* chnage habit styles ends here */
+
+/* run miles styles starts here */
+.run-extra-mile {
+  max-width: 1044px;
+  margin: 100px auto;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  padding: 40px 30px 40px 50px;
 }
+.run-mile-content {
+width: 50%;
+}
+.run-mile-img {
+  display: flex;
+  justify-content: right;
+  max-width: 50%;
+}
+.run-mile-img img {
+  align-items: center;
+  width: 80%;
+  border-radius: 18px;
+}
+/* run miles styles ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive style*/
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   body {
@@ -249,13 +294,17 @@ nav {
     width: 100%;
     margin-top: 50px;
   }
-  .habit-cards-container{
+  .habit-cards-container {
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
-}
-.habit-card{
+  }
+  .habit-card {
     margin-top: 20px;
-}
+  }
+  .run-extra-mile {
+    gap: 10px;
+    padding: 30px;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
   body {
@@ -273,13 +322,26 @@ nav {
     width: 100%;
     margin-top: 50px;
   }
-  .habit-cards-container{
+  .habit-cards-container {
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
-}
-.habit-card{
+  }
+  .habit-card {
     margin-top: 10px;
-}
+  }
+  .run-extra-mile {
+    gap: 30px;
+    padding: 30px;
+  }
+  .run-mile-content {
+  width: 50%;
+  }
+  .run-mile-img {
+    max-width: 50%;
+  }
+  .run-mile-img img {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
@@ -342,12 +404,27 @@ nav {
     font-weight: 900;
     line-height: 120%;
   }
-  
-.habit-cards-container{
+
+  .habit-cards-container {
     grid-template-columns: repeat(1, 1fr);
     padding: 20px;
-}
-.habit-card{
+  }
+  .habit-card {
     margin-top: 20px;
-}
+  }
+  .run-extra-mile {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  .run-mile-content {
+    display: grid;
+  width: 100%;
+  }
+  .run-mile-img {
+    max-width: 100%;
+  }
+  .run-mile-img img {
+    width: 100%;
+  }
 }
