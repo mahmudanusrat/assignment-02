@@ -26,11 +26,16 @@ a {
   text-decoration: none;
 }
 .section-title {
+  color: rgb(255, 255, 255);
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%;
 }
 .section-subtitle {
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
   font-weight: 400;
+  line-height: 24px;
 }
 /* shared styles ends here*/
 /* nav styles starts here */
@@ -40,7 +45,6 @@ nav {
   margin: 50px auto;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
 }
 .brand {
   color: rgb(230, 83, 60);
@@ -83,7 +87,6 @@ nav {
   margin: 0px auto;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
 }
 .banner-content {
   width: 50%;
@@ -194,6 +197,33 @@ nav {
 }
 /* banner styles ends here */
 
+/* chnage habit styles starts here */
+.change-habit {
+  max-width: 1044px;
+  margin: 100px auto;
+  text-align: center;
+}
+.chnage-habit-content {
+  max-width: 671px;
+  margin: 0 auto;
+}
+.habit-cards-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.habit-card{
+}
+.card-img{
+    border-radius: 100px;
+    border: 4px solid #FFFFFF1A;
+    margin-bottom: 20px;
+}
+.card-title{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+}
 /* responsive style*/
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   body {
@@ -219,6 +249,13 @@ nav {
     width: 100%;
     margin-top: 50px;
   }
+  .habit-cards-container{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+}
+.habit-card{
+    margin-top: 20px;
+}
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
   body {
@@ -236,6 +273,13 @@ nav {
     width: 100%;
     margin-top: 50px;
   }
+  .habit-cards-container{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+}
+.habit-card{
+    margin-top: 10px;
+}
 }
 
 @media screen and (min-width: 320px) and (max-width: 576px) {
@@ -292,4 +336,18 @@ nav {
   .video-subtitle {
     font-size: 12px;
   }
+  .section-title {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 120%;
+  }
+  
+.habit-cards-container{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+}
+.habit-card{
+    margin-top: 20px;
+}
 }
