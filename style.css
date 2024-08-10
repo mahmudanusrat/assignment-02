@@ -4,10 +4,10 @@
 .font-inter {
   font-family: "Inter", sans-serif;
 }
-.font-allura {
-  font-family: "Allura", cursive;
-  font-size: 98px;
+.font-miama {
+  font-family: "Miama", sans-serif;
   font-style: italic;
+  font-weight: 400px;
 }
 * {
   margin: 0;
@@ -68,7 +68,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: 48px;
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 39px;
@@ -77,13 +77,13 @@ nav {
 .active {
   border-radius: 46px;
   background: rgb(230, 83, 60);
-  padding: 8px 20px;
+  padding: 8px;
 }
 .nav-link {
   color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 400;
-  margin-right: 10px;
+  margin: 0px 10px;
   background-color: transparent;
 }
 .nav-hamburger {
@@ -108,6 +108,7 @@ nav {
   font-size: 78px;
   font-weight: 900;
   margin-bottom: 28px;
+  line-height: 94px;
 }
 .banner-subtitle {
   color: rgba(255, 255, 255, 0.5);
@@ -139,7 +140,7 @@ nav {
   position: absolute;
   top: 20%;
   bottom: 62%;
-  left: 70%;
+  left: 75%;
 }
 .workout-title {
   color: rgb(255, 255, 255);
@@ -160,13 +161,12 @@ nav {
   background: rgba(48, 48, 48, 0.54);
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 40px 10px;
+  gap: 8px;
+  padding: 40px 20px;
   width: max-content;
   position: absolute;
   top: 80%;
-  right: 90%;
-  bottom: 5%;
+  bottom: 4%;
   left: 10%;
 }
 .video-icon {
@@ -207,7 +207,7 @@ nav {
   margin: 100px auto;
   text-align: center;
 }
-.chnage-habit-content {
+.change-habit-content {
   max-width: 671px;
   margin: 0 auto;
 }
@@ -225,6 +225,7 @@ nav {
   color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 8px;
 }
 /* chnage habit styles ends here */
 
@@ -235,28 +236,88 @@ nav {
   border-radius: 18px;
   background: rgb(34, 34, 34);
 }
-.run-extra-mile-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 90px;
-    padding: 40px 30px 40px 50px;
+.run-extra-mile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 130px;
 }
 .run-mile-content {
-  width: 50%;
+  width: 40%;
+  padding: 30px 0px 30px 40px;
 }
 .run-mile-img {
-  display: flex;
-  justify-content: right;
-  max-width: 50%;
+  width: 43%;
+  padding: 0px 20px 0px 10px;
 }
 .run-mile-img img {
-  align-items: center;
-  width: 80%;
+  width: 100%;
   border-radius: 18px;
-  object-fit: fill;
+  object-fit: none;
+  object-position: 66% 33%;
+  zoom: 80%;
 }
 /* run miles styles ends here */
+
+/* bmi calculator styles starts here */
+.bmi-calculator {
+}
+.bmi-calculator-content {
+  max-width: 671px;
+  margin: 0 auto;
+}
+.bmi-calculator-container {
+  background: rgb(34, 34, 34);
+  max-width: 1440px;
+  margin: 100px auto;
+}
+.calculator-container {
+  max-width: 1044px;
+  margin: 0 auto;
+  display: flex;
+  gap: 170px;
+}
+.bmi-calculator-chart{
+  width: 40%;
+}
+.chart-title {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  font-weight: 900;
+  text-align: left;
+}
+.bmi-table {
+  margin-top: 50px;
+  border-collapse: collapse;
+}
+.table-head {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+  padding: 15px 20px;
+}
+.table-data td {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+}
+.input{
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 40px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* bmi calculator styles ends here */
 
 /* meet our team styles starts here */
 
@@ -278,37 +339,56 @@ nav {
   color: white;
   background-color: rgba(255, 255, 255, 0.1);
   margin-top: 60px;
-  
 }
 .trainer-content img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
   border-radius: 18px;
 }
-.trainer-img{
-   opacity: 0.7;
+.trainer-img {
+  opacity: 0.7;
 }
-.trainer-content{
-    position: relative;
+.trainer-content {
+  position: relative;
 }
-.trainer-details{
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
+.trainer-details {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
 }
-.trainer-name{
-font-size: 20px;
-font-weight: 900;
+.trainer-name {
+  font-size: 20px;
+  font-weight: 900;
 }
-.trainer{
-    font-family: Inter;
-font-size: 14px;
-font-weight: 400;
-line-height: 16.8px;
-text-align: left;
-color: rgba(255, 255, 255, 0.5);
+.trainer {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.5);
 }
 
+footer {
+  background: rgba(255, 255, 255, 0.1);
+}
+.footer {
+  max-width: 1044px;
+  margin: 100px auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 70px 0px;
+}
+.footer-content {
+  border: 1px solid red;
+  flex: 1;
+}
+.get-started {
+  border: 1px solid blue;
+  flex: 1;
+}
 
 /* responsive style*/
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
@@ -351,9 +431,12 @@ color: rgba(255, 255, 255, 0.5);
   body {
     padding: 0px 40px;
   }
+  .nav-items {
+    gap: 16px;
+  }
   .banner {
     flex-direction: column;
-    padding: 70px;
+    padding: 40px;
   }
   .banner-content {
     width: 100%;
@@ -363,25 +446,42 @@ color: rgba(255, 255, 255, 0.5);
     width: 100%;
     margin-top: 50px;
   }
+  .workout-content {
+    left: 54%;
+    top: 8%;
+    bottom: 74%;
+  }
+  .video-content {
+    top: 60%;
+    right: 90%;
+    bottom: 22%;
+    left: 14%;
+  }
   .habit-cards-container {
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
   }
-  .habit-card {
-    margin-top: 10px;
+  .change-habit-content .section-subtitle {
+    padding: 0px 90px;
+  }
+  .habit-card .section-subtitle {
+    padding: 0px 40px;
   }
   .run-extra-mile-container {
-    gap: 30px;
+    gap: 60px;
     padding: 30px;
   }
   .run-mile-content {
-    width: 50%;
+    width: 45%;
+    padding: 10px 0px 10px 20px;
   }
   .run-mile-img {
-    max-width: 50%;
+    width: 48%;
   }
   .run-mile-img img {
     width: 100%;
+    zoom: 70%;
+    height: 500px;
   }
 }
 
@@ -400,9 +500,16 @@ color: rgba(255, 255, 255, 0.5);
   }
   .banner-title {
     font-size: 36px;
+    line-height: 45px;
+  }
+  .banner-subtitle {
+    padding-right: 50px;
   }
   .banner-content {
     width: 100%;
+  }
+  .club {
+    display: none;
   }
   .banner-img {
     justify-content: center;
@@ -412,7 +519,7 @@ color: rgba(255, 255, 255, 0.5);
   .banner-img img {
     max-width: 100%;
   }
-  .font-allura {
+  .font-miama {
     font-size: 36px;
   }
   .workout-title {
@@ -422,13 +529,12 @@ color: rgba(255, 255, 255, 0.5);
     font-size: 9px;
   }
   .workout-content {
-    left: 52%;
-    top: 10%;
-    bottom: 73%;
-    right: 2%;
+    left: 58%;
+    top: 8%;
+    bottom: 78%;
   }
   .video-content {
-    top: 70%;
+    top: 50%;
     right: 90%;
     bottom: 50%;
     left: 4%;
@@ -445,29 +551,38 @@ color: rgba(255, 255, 255, 0.5);
     font-weight: 900;
     line-height: 120%;
   }
-
   .habit-cards-container {
     grid-template-columns: repeat(1, 1fr);
     padding: 20px;
+    margin-top: 0px;
+  }
+  .change-habit-content .section-subtitle {
+    padding: 0px 20px;
   }
   .habit-card {
     margin-top: 20px;
+    padding: 0px 30px;
+  }
+  .habit-card .section-subtitle {
+    padding: 0px 20px;
   }
   .run-extra-mile-container {
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
+    gap: 40px;
+    padding: 33px;
     margin-top: 0px;
   }
   .run-mile-content {
     display: grid;
     width: 100%;
+    padding: 0px;
   }
   .run-mile-img {
-    max-width: 100%;
+    width: 100%;
+    padding: 0px;
   }
   .run-mile-img img {
-    width: 100%;
+    zoom: 40%;
   }
   .trainer-container {
     grid-template-columns: repeat(1, 1fr);
