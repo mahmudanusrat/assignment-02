@@ -395,6 +395,35 @@ form .btn-primary {
 }
 /* meet our team styles ends here */
 
+/* fintness class styles starts here*/
+.fitness-class{
+  background: linear-gradient(45deg, rgba(14, 10, 10, 0.75), rgba(231, 130, 128, 0.75)), 
+            url('images/exercise2.png');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.fitness-class-content{
+  max-width: 1040px;
+  margin: 100px auto;
+  padding: 80px;
+  text-align: left;
+}
+.fitness-class-content .section-title{
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.fitness-class-content .font-miama{
+ line-height: 100px;
+   
+}
+.fitness-class-content span{
+  color: rgb(230, 83, 60);
+   
+}
+
+/* fintness class styles ends here*/
+
 /*footer styles starts here */
 footer {
   background: rgba(255, 255, 255, 0.1);
@@ -697,6 +726,16 @@ footer {
   }
   .trainer-container {
     margin-top: 20px;
+  }
+  .fitness-class-content{
+    padding: 30px;
+    width: 80%;
+    margin: 0px;
+    text-align: left;
+  }
+  .fitness-class-content .font-miama{
+    font-size: 20px;
+    line-height: 50px;
   }
   .footer-container {
     flex-direction: column;
