@@ -51,6 +51,11 @@ a {
 /* shared styles ends here*/
 
 /* nav styles starts here */
+header{
+  padding: 14px;
+  background-image: linear-gradient(to bottom, #131313, #161616, #191919, #1c1c1c, #1f1f1f, #1f1f1f, #1f1f1f, #1f1f1f, #1c1c1c, #1a1919, #171615, #131311);
+}
+
 nav, .banner {
   max-width: 1044px;
   display: flex;
