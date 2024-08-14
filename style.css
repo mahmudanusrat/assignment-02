@@ -51,7 +51,7 @@ a {
 /* shared styles ends here*/
 
 /* nav styles starts here */
-nav {
+nav, .banner {
   max-width: 1044px;
   display: flex;
   margin: 50px auto;
@@ -94,11 +94,7 @@ nav {
 
 /* banner styles starts here */
 .banner {
-  max-width: 1044px;
-  display: flex;
   margin: 0px auto;
-  justify-content: space-between;
-  align-items: center;
 }
 .banner-content {
   width: 50%;
@@ -126,18 +122,20 @@ nav {
 .banner-img img {
   max-width: 80%;
 }
-.workout-content {
+.workout-content, .video-content {
   box-sizing: border-box;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   backdrop-filter: blur(20px);
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: max-content;
   position: absolute;
+}
+.workout-content{
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
   top: 20%;
   bottom: 62%;
   left: 75%;
@@ -154,17 +152,9 @@ nav {
   letter-spacing: 1px;
 }
 .video-content {
-  box-sizing: border-box;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  backdrop-filter: blur(20px);
   background: rgba(48, 48, 48, 0.54);
-  display: flex;
-  align-items: center;
   gap: 8px;
   padding: 40px 20px;
-  width: max-content;
-  position: absolute;
   top: 80%;
   bottom: 4%;
   left: 10%;
@@ -386,7 +376,6 @@ form .btn-primary {
   font-weight: 900;
 }
 .trainer {
-  font-family: Inter;
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
@@ -430,7 +419,7 @@ footer {
 }
 .footer {
   max-width: 1044px;
-  margin: 100px auto;
+  margin: 100px auto 0px auto;
   padding: 0px 0px 30px 0px;
 }
 .footer-container {
@@ -521,7 +510,7 @@ footer {
     flex-direction: column;
     padding: 40px;
   }
-  .banner-content {
+  .banner-content,.calculate-your-bmi {
     width: 100%;
   }
   .banner-img {
@@ -574,9 +563,6 @@ footer {
     width: 100%;
     margin-bottom: 50px;
   }
-  .calculate-your-bmi {
-    width: 100%;
-  }
   .footer-container {
     flex-direction: column;
     gap: 40px;
@@ -591,10 +577,10 @@ footer {
   .nav-hamburger {
     display: block;
   }
-  .nav-items {
+  .nav-items, .club{
     display: none;
   }
-  .banner {
+  .banner,.calculator-container {
     flex-direction: column;
   }
   .banner-title {
@@ -603,12 +589,6 @@ footer {
   }
   .banner-subtitle {
     padding-right: 50px;
-  }
-  .banner-content {
-    width: 100%;
-  }
-  .club {
-    display: none;
   }
   .banner-img {
     justify-content: center;
@@ -671,12 +651,8 @@ footer {
     padding: 33px;
     margin-top: 0px;
   }
-  .run-mile-content {
+  .run-mile-content, .run-mile-img  {
     display: grid;
-    width: 100%;
-    padding: 0px;
-  }
-  .run-mile-img {
     width: 100%;
     padding: 0px;
   }
@@ -697,14 +673,10 @@ footer {
     margin-bottom: 0;
   }
   .calculator-container {
-    flex-direction: column;
     gap: 50px;
     padding: 30px 10px 40px 20px;
   }
-  .bmi-calculator-chart {
-    width: 100%;
-  }
-  .calculate-your-bmi {
+  .banner-content, .bmi-calculator-chart, .calculate-your-bmi {
     width: 100%;
   }
   form .btn-primary {
@@ -715,17 +687,11 @@ footer {
     font-weight: 900;
     margin-bottom: 10px;
   }
-  .bmi-table {
+  .bmi-table, .trainer-container {
     margin-top: 20px;
   }
   .bmi-calculator-container {
     margin: 30px auto;
-  }
-  .trainer-content img {
-    width: 100%;
-  }
-  .trainer-container {
-    margin-top: 20px;
   }
   .fitness-class-content{
     padding: 30px;
